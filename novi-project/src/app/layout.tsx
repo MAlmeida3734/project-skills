@@ -9,14 +9,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={`antialiased`}
-    >
+    <html lang="en">
+      <body  className={`antialiased`}>
+          
       <Header/>
-
-      
-      <body>{children}</body>
+        
+        {children}</body>
     </html>
   );
 }
